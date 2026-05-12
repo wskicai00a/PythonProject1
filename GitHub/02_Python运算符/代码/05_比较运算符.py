@@ -12,11 +12,12 @@
 #  A~Z : 65~90
 #  0~9 : 48~57
 
-
-
+n = 10
+print(5 < n < 20)#返回True
 # 练习：
 # 7. BMI（身体质量指数）的计算公式为 BMI=体重（千克）/身高的平方（米）
 #   请输入您的身高 和 体重，计算BMI值，判断是否在18.5~25之间？
-
-
-
+height = input("请输入身高：")
+weight = input("请输入体重：")
+BMI = (int(weight)/(int(height) ** 2))
+print(BMI, 18.5< BMI < 25)

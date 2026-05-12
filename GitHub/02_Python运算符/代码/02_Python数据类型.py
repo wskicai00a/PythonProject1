@@ -12,25 +12,25 @@
 # 	bytes【字节】二进制， 如：b'hello'
 
 # int 整数
-
+a = 1
+print(a, type(a))
 # float: 小数
-
+b = 1.1
 # str: 字符串 string
-
+c = "111"
 # bool: 布尔类型, True(1), False(0)
-
+d = True
 # NoneType: 空, None
-
-
+h=None
 # list：列表，数组
-
+e = [1,2 ,3]
 # tuple： 元组，不可变的列表
-
+f = (1,2 ,3)
 # dict: 字典，dictionary
 #     key: value  : 键值对
-
-# set: 集合（了解）,唯一
-
+g = {"name":"a", "age":11}
+# set: 集合（了解）,里边的值是唯一的
+j={1, 2, 3, 3, 4}#实际上j={1, 2, 3, 4}
 # bytes: 字节类型，二进制类型
-
+i=b'hello'
 
