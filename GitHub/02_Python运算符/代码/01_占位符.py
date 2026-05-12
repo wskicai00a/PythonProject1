@@ -5,7 +5,10 @@ age = 45
 salary = 1.4567
 
 print('大家好，我是杰伦，我今年45，我的年薪1.4567亿')
-
+print(f"大家好，我是{name}, 我今年{age}，我的年薪是{salary}亿")
+a="aaa"
+b="bbb"
+print(f'{a}, 你是{b}吗?')
 
 
 # 占位符：（建议掌握）
@@ -15,7 +18,11 @@ print('大家好，我是杰伦，我今年45，我的年薪1.4567亿')
 #   %% : 百分号
 
 
-
+a="aaa"
+b="bbb"
+print(f'{a}, 你是{b}吗?')
+print('{}, 你是{}吗?'.format(a, b))
+print("%s,你是%s吗？"%(a, b))
 
 
 # 花括号占位符.format() （了解）
@@ -35,5 +42,7 @@ height = float(input('身高：'))
 weight = float(input('体重：'))
 
 
-
+print(f'大家好，我是{name}, 今年{age}岁，我身高是{height}cm，体重是{weight}kg')
+print('大家好，我是%s, 今年%d岁，我身高是%.2fcm，体重是%.2fkg'%(name, age, height, weight))
+print('大家好，我是{}, 今年{}岁，我身高是{}cm，体重是{}kg'.format(name, age, height, weight))
 
