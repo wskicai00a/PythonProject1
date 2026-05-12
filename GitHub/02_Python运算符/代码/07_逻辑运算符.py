@@ -4,11 +4,8 @@
 
 # and: 并且
 #   2边都为True则为True，只要有一个是False 则为False
-
 # or：或者
 #   2边都为False则为False, 只要有一个是True则为True
-
-
 # not 非，取反
 
 
@@ -52,7 +49,7 @@ print()
 x = True and 6
 y = False or True or 8
 z = x * 3 + y * 2
-print(z)  #
+print(x, y, z)  #
 
 
 
