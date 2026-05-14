@@ -9,18 +9,28 @@
 #           iterable:列表/元组/字符串/字典/集合
 # 注意append和extend区别
 
-
+a = [10, 20]
+a.append(30)
+print(a)
+a.insert(1, 30)
+print(a)
+b = [30]
+a.extend(b)
+print(a)
 
 # 删除:
 #    pop(i) : 弹出(删除并返回)下标i对应的元素, 默认删除最后一个元素
 #    remove(n) : 删除指定元素n
 #    clear() : 清空列表
-
+n = a.pop(1)#弹出(删除并返回)下标i对应的元素, 默认删除最后一个元素
+a.remove(20)#删除指定元素n#直接删除元素
+print(a)
+a.clear()#清空列表
 
 
 # count(): 计数,统计列表中元素出现的次数
 
-
+a.count(20)#统计列表a中元素20出现的次数
 # clear() : 了解
 
 
@@ -36,8 +46,9 @@
 
 
 # index(n) : 获取元素n第一次出现的下标,如果元素不存在则报错
-
-
+a = [10, 20, 3, 30, 30, 30]
+a.index(30)
+print(a)
 
 # 排序
 #   sort() : 默认升序排列, 直接修改原列表
@@ -45,13 +56,21 @@
 #   reverse() : 倒序,逆序, 直接修改原列表
 ##     reversed() : 倒序,逆序, 不改变原列表 (了解)
 
+a.sort()
+print(a)
+a.reverse()
+print(a)
 
-
+a.sort(reverse=False) 等同于a.reverse()
+print(a)
 
 
 
 # copy(): 复制,拷贝
-
+print("=====")
+a = [10,20]
+b = a.copy()
+print(b)
 
 
 
